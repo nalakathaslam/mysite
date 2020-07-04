@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASLAM DESIGNS</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<!------start navbar area --->
+
+<body data-spay="scroll" data-target="#navbarResponsive">
+
+    <div id="home">
+
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+         <a class="navbar-brand" href="index.html"><img src="images/logo999.png"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+           <span class="navbar-toggler-icon"></span>  
+         </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutsection">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#darksection">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallerysection">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clientsection">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactsection">Contact</a>
+                </li>
+              </ul>
+          </div>
+     </nav> 
+    </div>
+
+    <!------end navbar area --->
+
+    <!------start fixed bg area --->
+
+    <main id="face">
+        <div class="banner-info container">
+            <div class="col-md-12">
+                
+                <h3 class="banner-text">Hello, I'm</h3>
+                <h1 class="banner-text">Muhammed Aslam</h1>
+                <h5 class="banner-text">Designer-Developer-Freelancer</h5>
+                  <div class="btn">
+                <button type="button"><a href="#aboutsection"></a>LERN MORE</button>
+                </div>              
+            </div>
+             
+        </div>
+    </main>
+
+    <!------end fixed bg area --->
+
+    <!------start about area --->
+
+    <a name="aboutsection">
+    <div id="about" class="container">
+        <div class="row">
+            
+            <div class="col-md-6">
+                    <h1>About Me</h1>
+                    <hr>
+                <h3>I'm Muhammed Aslam Abdul Azeez,</h3>
+                <h3>A multi-disciplinary creative from India,</h3>
+                <p>Born in 1987. Raised in a small town in India. Been hard at work since 2015, currently working as a freelancer. 
+                    <p>designing & developing interactive experiences for clients.</p>
+                <p>" Expect the best, plan for the worst, and prepare to be surprised. This is my motive ".</p>
+                <p><i>“ The role of the designer is that of a good, thoughtful host anticipating the needs of his guests.” –Charles Eames.</i></p>
+                    
+            </div>
+            <div class="col-md-6">
+                <h2 class="mt-4">Skills & Abilities</h2>
+                <hr>
+                <h6 id="chart1" class="progress-title">Web Designing</h6>
+
+                    <div class="progress" style="height: 5px;">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                <h6 id="chart2" class="progress-title">Programing</h6>
+
+                    <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                <h6 id="chart3" class="progress-title">Photoshop</h6>
+
+                    <div class="progress" style="height: 5px;">
+                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                <h6 id="chart4" class="progress-title">Web Devolopment</h6>
+
+                    <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+                    </div>
+                <div class="btn">
+                    <button id="clickme" type="button">HIRE ME</button>
+                    <div class="smilybox">
+                        <img src="images/smily.png">
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    </a>
+
+    <!------end about area --->
+
+    <!------start dark fixed area --->
+
+    
+    <div id="fixedbg" class="offset">
+        <div class="fixed-background">
+
+        <div class="row dark text-center">
+            
+            <div class="col-12">
+                <a name="darksection">
+                <h2 class="heading">Service Tolls</h2>
+                <hr>
+            </div>
+            <div class="col-md-3">
+                <h3>HTML 5</h3>
+                <div class="feature">
+                    <a id="ht" href="#"><img src="images/brackets2.png"></a>
+                    </div>
+                <p class="lead">Built with the latest, HTML 5</p>
+            </div>
+            <div class="col-md-3">
+                <h3>BOOTSTRAP 4</h3>
+                <div class="feature">
+                    <a href="#"><img src="images/boot.png"></a>
+                    </div>
+                              
+                <p class="lead">Great grid system.</p>
+            </div>
+            <div class="col-md-3">
+                <h3>CSS 3</h3>
+                <div class="feature">
+                    <a href="#"><img src="images/css1.png"></a>
+                    </div>
+                
+                <p class="lead">Built with the latest, CSS 3</p>
+            </div>
+            <div class="col-md-3">
+                <h3>PHOTOSHOP</h3>
+                <div class="feature">
+                    <a href="#"><img src="images/photoshop copy.png"></a>
+                    </div>
+                
+                <p class="lead">Various design toll</p>
+            </div>
+
+            <div class="fixed-wrap">
+                <div class="fixed"> 
+                </div>
+            </div>     
+        </div>
+        </div>
+    </div>
+    </a>
+
+    <!---end dark fixed area --->
+
+    <!---start gallery area --->
+
+    <a name="gallerysection">
+    <section id="slide">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Project Gallery</h2>
+        <hr>
+
+    
+                    <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating" href="#multi-item-example" data-slide="next"><svg class="bi bi-chevron-right" width="50" height="50" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"></path></svg></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active">
+  
+        <div class="col-md-3" style="float:left">
+         <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/images.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Aslam Design</h4>
+              <p class="card-text">My personal website. design concept and my work details everything attach and marketing to people.</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro10.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Cutford </h4>
+              <p class="card-text">This website for the best icecream shop in kerala. Iconic theme with high quality content and images.</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Toss Furniture</h4>
+              <p class="card-text">A fully packed website for the best Furniture store in ernamkulam. every updates available in site.  </p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+        
+         <div class="col-md-3" style="float:left">
+         <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Flower Shop</h4>
+              <p class="card-text">Flowers like a new born baby, fresh flowers 24 hours available your one click at this website</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item">
+  
+        <div class="col-md-3" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro11.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">My Portfolio</h4>
+              <p class="card-text">Personal Portfolio a vibrant website packed with particulars of myself. Designed with simplicity.</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Rhythm</h4>
+              <p class="card-text">A music instruments shop website. all kind of musical instruments available this website.</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Uptown Web</h4>
+              <p class="card-text">Uptown Web website service available. all kind of programing works and app Devolopment available.</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="images/pro6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Music World</h4>
+              <p class="card-text">All kind of music gadgets available in this website. every prize and products details available.</p>
+              <a class="btn btn-info">Website</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+<!--/.Second slide-->
+  
+      </div>
+<!--/.Slides-->
+  
+      </div>
+
+      </div>
+      </div>
+      </div>
+      </section>
+    </a>
+  <!--/.Carousel Wrapper-->
+
+  <!---end gallery area --->
+
+<!---start cliend area --->
+
+<a name="clientsection">
+<section id="cliend">
+    <div class="container">
+        <h2>Clients Testimonials</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+<div class="card mb-3" style="max-width: 540px; float: left;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/facial2.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Samuel Joseph</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. Unique Design Responsive Design Different Layout Creative PSD, This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="col-md-6">
+  <div class="card mb-3" style="max-width: 540px; float: left;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/facial3.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Yousef Faridh</h5>
+          <p class="card-text">Unique Design Responsive Design Different Layout Creative PSD, This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+  </div>
+  </div>
+  </div>
+</section>
+</a>
+
+<!---end cliend area --->
+
+<!---start contact area --->
+
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <a name="contactsection">
+                <h2>Contact</h2>
+            </a>
+                 <hr>
+                 <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Swiss Bell Hotel Appartment, Doha, Qatar</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+974 31333509</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>nalakathaslam@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
+                    
+            </div>
+        </div>
+    </div>
+</section>
+</a>
+
+<!---end contact area --->
+
+<!---start footer area --->
+
+<footer id="foot">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <a class="btn btn-social-icon btn-twitter" style="float: left;">
+                    <span class="fa fa-twitter "></span>
+                  </a>
+                <a class="btn btn-social-icon btn-facebook" style="float: left;">
+                    <span class="fa fa-facebook"></span>
+                  </a>
+                <a class="btn btn-social-icon btn-linkedin" style="float: left;">
+                    <span class="fa fa-linkedin"></span>
+                  </a>
+                  <hr>
+                <h5>  Copyright © Aslam Designs 2020  </h5> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!---end footer area --->
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>

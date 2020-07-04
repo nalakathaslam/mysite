@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:400;700');
+
+body {
+    height: 3500px;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+/*---start navigation---*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+.navbar-brand img {
+    height: 2rem;
+
+}
+.navbar-nav li{
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+/*---End navigation---*/
+
+/*---start fixed backround ---*/
+
+#face {
+    background-image: url(images/aslamcover.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#face h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+}
+
+#face h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1ebba3;
+}
+
+#face h5 {
+    font-size: 1.5rem;
+    color: #000000;
+    padding-top: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+
+#smily1 {
+   width: 100px;
+   height: 100px;
+   padding-left: 330px;
+   margin-bottom: 70px;
+}
+
+
+/*---start Main button ---*/
+
+main button {
+    position: absolute;
+    top: 100%;
+    
+}
+
+main button {
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #1ebba3;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+main button:focus {
+    outline: none;
+}
+
+main button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-150deg);
+}
+
+main button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+main button:hover {
+    background: #1ebba3;
+    cursor: pointer;
+}
+
+main button:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+main button:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+/*---end main button---*/
+
+/*---End fixed backround ---*/
+
+
+/*---start about area ---*/
+
+#about {
+    width: 100%;
+    height: 500px;
+    background-color:white;
+}
+
+#about h1 {
+    padding-top: 45px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+#about h2 {
+    padding-top: 20px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+}
+
+#about p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#chart1 {
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chart2 {
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chart3 {
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#chart4 {
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*---start button ---*/
+
+.container button {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.container button {
+    background: none;
+    color: rgb(14, 211, 211);
+    width: 250px;
+    height: 60px;
+    border: 1px solid #1ebba3;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+.container button:focus {
+    outline: none;
+}
+
+.container button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-150deg);
+}
+
+.container button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.container button:hover {
+    background: #1ebba3;
+    cursor: pointer;
+}
+
+.container button:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.container button:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+/*---end button ---*/
+
+.smilybox img{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;    
+}
+
+/*---end about area ---*/
+
+/*---start fixed dark bg ---*/
+
+#fixedbg{
+    background-image: url(images/apple.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 3rem 10.5rem;
+}
+
+#fixedbg h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+}
+
+#fixedbg hr {
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+#fixedbg h3{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#ht img {
+    padding-top: 15px;
+}
+
+#fixedbg p {
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+/*---end fixed dark bg ---*/
+
+/*---start gallery area ---*/
+
+#slide {
+    background-color: rgb(8, 8, 8);
+    height: 650px;
+    width: 100%;
+}
+
+#slide h2 {
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+#slide hr {
+    max-width: 97%;
+    background-color: whitesmoke;
+    margin-left: 20px;
+}
+
+.controls-top svg {
+        display: inline;
+        margin-left: 1050px;
+        padding-bottom: 10px;
+        background-size: 2rem 2rem;
+}
+
+/*---end gallery area ---*/
+
+/*---start cliend area ---*/
+
+#cliend {
+    padding-top: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+#cliend h2 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+#cliend hr {
+    max-width: 100%;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+/*---end cliend area ---*/
+
+/*---start contact area ---*/
+
+#contact {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(53, 49, 49);
+}
+
+#contact h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+#contact hr {
+    max-width: 100%;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+#contact {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#subject {
+    margin-top: 20px;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+/*---end contact area ---*/
+
+/*---start footer area ---*/
+
+#foot {
+    width: 100%;
+    height: 125px;
+    background-color: rgb(8, 8, 8);
+}
+
+span {
+    color: #277ceb;
+    position: absolute;
+    padding-left: 500px;
+    padding-top: 15px;   
+}
+
+#foot hr {
+    background-color: darkslategrey;
+    margin-top: 60px;
+    max-width: 28%;
+}
+
+/*---end footer area ---*/
+
